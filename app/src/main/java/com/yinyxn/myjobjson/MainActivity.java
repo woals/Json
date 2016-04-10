@@ -27,7 +27,7 @@ import java.util.List;
 
 /**
  * 本人只是使用Log打印出解析后的数据，需要的人可以在实体类中加入get set方法获取想要的数据再通过控件显示出来
- * I just use the Log to print out the parsed data，Need to join in the entity class get and set method to obtain want data displayed by the control again
+ * I just use the Log to print out the parsed data，need to join in the entity class get and set method to obtain want data displayed by the control again
  */
 public class MainActivity extends AppCompatActivity {
 
