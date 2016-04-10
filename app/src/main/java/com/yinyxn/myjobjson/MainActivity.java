@@ -4,7 +4,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -26,14 +25,11 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 本人只是使用Log打印出解析后的数据，需要的人可以在实体类中加入get set方法获取想要的数据再通过控件显示出来
+ * I just use the Log to print out the parsed data，Need to join in the entity class get and set method to obtain want data displayed by the control again
+ */
 public class MainActivity extends AppCompatActivity {
-
-    TextView textView_city;
-    TextView textView_temp;
-    TextView textView_wd;
-    TextView textView_ws;
-    TextView textView_address;
-    TextView textView_phoneNumber;
 
     String url = null;
 
