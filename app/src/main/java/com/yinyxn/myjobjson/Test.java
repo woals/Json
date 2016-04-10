@@ -22,6 +22,37 @@ public class Test {
         String currentCity;
         String pm25;
         List<Index> index = new ArrayList<>();
+        List<Weather_data> weather_data = new ArrayList<>();
+        public static class Weather_data{
+            String date;
+            String dayPictureUrl;
+            String nightPictureUrl;
+            String weather;
+            String wind;
+            String temperature;
+
+            public Weather_data(String date, String dayPictureUrl, String nightPictureUrl, String weather, String wind, String temperature) {
+                this.date = date;
+                this.dayPictureUrl = dayPictureUrl;
+                this.nightPictureUrl = nightPictureUrl;
+                this.weather = weather;
+                this.wind = wind;
+                this.temperature = temperature;
+            }
+
+            @Override
+            public String toString() {
+                return "Weather_data{" +
+                        "date='" + date + '\'' +
+                        ", dayPictureUrl='" + dayPictureUrl + '\'' +
+                        ", nightPictureUrl='" + nightPictureUrl + '\'' +
+                        ", weather='" + weather + '\'' +
+                        ", wind='" + wind + '\'' +
+                        ", temperature='" + temperature + '\'' +
+                        '}';
+            }
+        }
+
         public static class Index{
             String title;
             String zs;
@@ -44,9 +75,12 @@ public class Test {
 
         @Override
         public String toString() {
-            return "currentCity='" + currentCity + '\'' +
+            return "Results{" +
+                    "currentCity='" + currentCity + '\'' +
                     ", pm25='" + pm25 + '\'' +
-                    ", index=" + index;
+                    ", index=" + index +
+                    ", weather_data=" + weather_data +
+                    '}';
         }
     }
 
